@@ -1,0 +1,21 @@
+header nav{
+    background-color: #123D6A;
+}
+
+.pink{
+    color: white;
+    background-color: #AB3B61;
+}
+
+.pink:hover{
+    color: white;
+    background-color: #e45d74;
+}
+
+span{
+    color: #AB3B61;
+}
+
+span:hover{
+    color: #e45d74;
+}

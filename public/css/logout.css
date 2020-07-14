@@ -1,0 +1,101 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #123D6A;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track
+{
+	background-color: #123D6A;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #123D6A;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #ffffff52;
+	background-image: #0000;
+}
+
+.content{
+    margin-top: 2em;
+}
+
+.card{
+    margin-top: 6em;
+    background-color: #f5efec;
+}
+
+.card a{
+    color: #AB3B61;
+}
+
+.card a:hover{
+    color: #e45d74;
+}
+
+.card button{
+    margin-top: 1em;
+}
+
+.img-index{
+    position: absolute;
+    float: right;
+    margin-top: 9vh;
+    right: 0em;
+    width: 60vw;
+}
+
+.first{
+    padding-top: 5em;
+    min-height: 100vh;
+}
+
+.section{
+    padding-top: 3em;
+    min-height: 100vh;
+}
+
+#logo{
+    width: 40vw;
+    margin-left: 1em;
+    margin-top: 4vw;
+}
+
+.description{
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 767px){
+    .img-index{
+        display: none;
+    }
+
+    #logo{
+        width: 20em;
+        margin-left: 0em;
+    }
+
+    .mobile{
+        margin-top: 10vh;
+        text-align: center;
+    }
+    .description{
+        margin-left: none;
+    }
+    .first{
+        padding-top: 6em;
+    }
+}

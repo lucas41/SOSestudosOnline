@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
-class Postcontrolador extends Controller
+class inicio extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +13,18 @@ class Postcontrolador extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('Cadastro', compact([ 'posts']));
+
+        return view('Inicio');
     }
+
+    public function home()
+    {
+
+        $posts = Post::all();
+        return view('Inicio', compact([ 'posts']));
+       
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -35,14 +44,7 @@ class Postcontrolador extends Controller
      */
     public function store(Request $request)
     {
-        $post = new Post();
-        $post->name = $request->input('name');
-        $post->serie = $request->input('serie');
-        $post->insta = $request->input('insta');
-        $post->face = $request->input('face');
-        $post->matematica = $request->input('matematica');
-        $post->save();
-        return redirect('/post');
+        //
     }
 
     /**
@@ -87,12 +89,6 @@ class Postcontrolador extends Controller
      */
     public function destroy($id)
     {
-        $post = post::find($id);
-        if(isset($post)) {
-            $post->delete();
-
-        }
-        return redirect('/post');
-        
+        //
     }
 }
