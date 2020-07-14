@@ -11,39 +11,13 @@
         @guest 
             <title>Estudos em casa</title>
             <link rel="stylesheet" href="{{ asset('css/logout.css') }}">
-        @else
-            <title>{{$view_name}} / SOS</title>
-            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-        @endguest
-        
-    </head>
-    <body>
-        <header>
-            @guest 
+        </head>
+        <body>
+            <header>
                 <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-            @else
-                <nav class="navbar navbar-expand-lg navbar-dark">
-            @endguest
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                 @if($view_name == "Inicio")
-                    <ul id="topicos" class="mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tópicos
-                            </a>
-                            <div id="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Últimos cadastros</a>
-                                <a class="dropdown-item" href="#" >Matemática</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Seus cadastros</a>
-                            </div>
-                        </li>
-                    </ul>
-                @endif
-                </div>
-                @guest
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarText">
                         <a class="navbar-brand ml-2" href="/">
                             <img src="{{ asset('/imgs/brasao.png') }}" width="30" height="30" loading="lazy">
@@ -68,43 +42,61 @@
                             @endif
                         </ul>  
                     </div>
-                    @else
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <a class="navbar-brand ml-2" href="/">
-                            <img src="{{ asset('/imgs/brasao.png') }}" width="30" height="30" loading="lazy">
-                        </a>
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('inicio') }}">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('cadastro') }}">Cadastro</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('help') }}">Ajuda</a>
+        @else
+            <title>{{$view_name}} / SOS</title>
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        </head>
+        <body>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    @if($view_name == "Inicio")
+                        <ul id="topicos" class="mr-auto">
+                            <li class="nav-item dropdown">
+                                <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Tópicos
+                                </a>
+                                <div id="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Últimos cadastros</a>
+                                    <a class="dropdown-item" href="#" >Matemática</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Seus cadastros</a>
+                                </div>
                             </li>
                         </ul>
-                    </div>
-                    <button class="btn pink" type="submit" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">Sair</button>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+                    @endif
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <a class="navbar-brand ml-2" href="{{ route('inicio') }}">
+                            <img src="{{ asset('/imgs/brasao.png') }}" width="30" height="30" loading="lazy">
+                    </a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('inicio') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('cadastro') }}">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('help') }}">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn pink" type="submit" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">Sair</button>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 @endguest
             </nav>
         </header>
         <main>
             @yield('content')
         </main>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script>
-            AOS.init({
-                duration: 1200,
-            });
-        </script>
     </body>
 </html>

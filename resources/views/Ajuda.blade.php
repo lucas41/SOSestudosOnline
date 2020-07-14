@@ -8,28 +8,29 @@
             <div class="card-header" id="headingOne">
             <h2 class="mb-0">
                 <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Pergunta 1
+                Como acho o link para o meu perfil do Facebook?
                 </button>
             </h2>
             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#perguntas">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                <p><b>No app: </b>vá até seu perfil e clique no botão cinza ao lado do "Adicionar ao story". O link estará no final da página, pronto para ser copiado :)</p>
+                <p><b>No computador: </b>acesse seu perfil e copie a URL do navegador.</p>
             </div>
             </div>
-        </div>
+        </div> 
         <div class="card">
             <div class="card-header" id="headingTwo">
             <h2 class="mb-0">
                 <button class="btn btn-link  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Pergunta 2
+                Como acho o link para o meu perfil do Instagram?
                 </button>
             </h2>
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#perguntas">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                Apenas escreva "https://Instagram.com/" e, após a barra, coloque seu @.
             </div>
             </div>
         </div>
@@ -37,13 +38,13 @@
             <div class="card-header" id="headingThree">
             <h2 class="mb-0">
                 <button class="btn btn-link  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Pergunta 3
+                Não tenho uma das redes sociais pedidas, e agora?
                 </button>
             </h2>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#perguntas">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                Sem problemas! Apenas repita o link daquela que você tiver.
             </div>
             </div>
         </div>
@@ -51,13 +52,13 @@
             <div class="card-header" id="headingThree">
             <h2 class="mb-0">
                 <button class="btn btn-link  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
-                Pergunta 4
+                Para que serve esse site, afinal?
                 </button>
             </h2>
             </div>
             <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#perguntas">
             <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                O <em>SOS: Estudos em casa</em> foi desenvolvido com o objetivo de ajudar estudantes a estudarem em suas casas durante a pandemia, unindo aqueles que tem conhecimento com os que precisam.
             </div>
             </div>
         </div>

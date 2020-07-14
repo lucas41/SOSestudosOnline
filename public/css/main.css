@@ -37,8 +37,8 @@ main{
     color: #AB3B61;
 }
 
-#topicos a:hover{
-    color: #c9b9b4;
+#topicos .dropdown-item:hover{
+    background-color: #c9b9b4;
 }
 
 /* Div dos cartões */
