@@ -14,6 +14,7 @@
         <nav class="nav flex-column">
             <h5><a class="nav-link" href="#">Últimos cadastros</a></h5>
             <a class="nav-link" data-toggle="collapse" href="#MathCollapse" role="button" aria-expanded="false" aria-controls="MathCollapse">Matemática <i class="fas fa-sort-down"></i></a>
+                
                 <div class="collapse texto_sub" id="MathCollapse">
                     <a class="nav-link" href="/Conjuntos numéricos">Conjuntos numéricos</a>
                     <a class="nav-link" href="#">Regularidades numéricas</a>
@@ -32,6 +33,7 @@
                     <a class="nav-link" href="#">Resolução de triângulos não<br> retângulos</a>
                    
                 </div>
+                
             <a class="nav-link" href="#">Seus cadastros</a>
         </nav>
     </div>
@@ -45,20 +47,20 @@
                 <div class="card-body">
                     <h4 class="card-title" title="{{ $post->name}}">
                         <i>{{ $post->name}} </i>
+                        <a href="{{$post->face}}" target="none"> <span class="fab fa-facebook-square"></span></a>
                     </h4>
                     <h6 class="card-subtitle mb-2 text-muted">{{$post->serie}}</h6>
                     <h6><em>É ótimo(a) com:</em></h6>
                     <p class="card-text">{{$post->matematica}}</p>
-                    <h6 class="text-right">
-                        <a href="{{$post->face}}" target="none"> <span class="fab fa-facebook-square"> </span></a>
-                        <a href="{{$post->insta}}" target="none"> <span class="fab fa-instagram"> </span></a> 
-                    </h6>
+                    <p>
+                        <span class="fab fa-whatsapp"></span> {{$post->insta}}
+                    </p>
                     @if (Auth::user()->name == $post->name)
                         <div class="text-right">
                             <form method='post' action="/post{{ $post->id}}">
                                 @csrf
                                 <input type="hidden" name="_method" value="delete">
-                                <button type="submit" class="btn btn-sm pink">Apagar</button>
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Apagar</button>
                             </form>
                         </div>
                     @endif

@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// conteudos 
+Route::get('/Conjuntos numéricos', 'matematica@index')->name('Conjuntos numéricos');
+
+Route::get('/home', 'HomeController@index')->name('home');
+
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/inicio', 'inicio@index')->name('inicio');
     Route::get('/Ajuda', function () { return view('Ajuda'); })->name('help');
