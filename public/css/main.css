@@ -44,7 +44,7 @@ main{
 /* Div dos cartões */
 #page{
     width: 79vw;
-    margin-left: 1vw;
+    margin-left: 0.5vw;
     height: 89vh;
     overflow: auto;
     overflow-x: hidden;
