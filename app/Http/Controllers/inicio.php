@@ -14,7 +14,8 @@ class inicio extends Controller
     public function index()
     {
 
-        return view('Inicio');
+        $posts = Post::all();
+        return view('Inicio', compact([ 'posts']));
     }
 
     public function home()

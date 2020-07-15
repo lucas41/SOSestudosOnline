@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1 class="display-4">Novo cadastro</h1>
-    <form method="POST" action="/post " enctype="multipart/form-data">
+    <form method="POST" action="/post " enctype="multipart/form-data" onSubmit'>
         @csrf
         <div class="form-row">
             <div class="form-group col-md-6">
@@ -40,18 +40,11 @@
                 <option for="matematica" name="matematica" value="Função do 2º grau">Função do 2º grau</option>
             </select>
         </div>
-
         <div class="form-group">
             <button type="submit" class="btn pink my-2">Enviar</button>
             <button type="reset" class="btn btn-secondary my-2">Cancelar</button>
         </div>
       </form>
-      <div class="alert alert-success alert-dismissible fade show" role="alert">
-        Cadastro feito com sucesso! Veja seu cadastro na <a class="alert-link" href="{{ route('inicio') }}">home</a>.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
 </div>
 
     
