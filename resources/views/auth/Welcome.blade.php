@@ -41,7 +41,9 @@
             <div data-aos="fade-left">
                 <p>Siga a <i>EE "Padre Armani"</i> nas redes sociais: <a target="none" href="https://www.facebook.com/pe.armani.3/"><span class="fab fa-facebook-square"></span></a>   <a href="" target="none"><span class="fab fa-instagram"> </span></a></p> 
                 <h4>Dúvidas ou sujestões? Nos mande um email!</h4>
-                <form action="">
+
+  method="POST"
+                     <form action="https://formspree.io/sosestudosemcasa@gmail.com" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="nome">Nome</label>
