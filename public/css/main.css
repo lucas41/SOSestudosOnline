@@ -22,7 +22,29 @@ body{
 }
 
 #topicos .dropdown-menu{
-    background-color: #e2d6d3;   
+    background-color: #e2d6d3; 
+    width: 15em;
+    min-width: 0em;
+    height: 80vh;
+    overflow: auto;
+}
+
+#topicos .dropdown-menu::-webkit-scrollbar-track
+{
+	background-color: #e2d6d3;
+	border-radius: 10px;
+}
+
+#topicos .dropdown-menu::-webkit-scrollbar
+{
+	width: 10px;
+}
+
+#topicos .dropdown-menu::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #ab3b6070;
+	background-image: #0000;
 }
 
 #topicos .dropdown-divider{
@@ -81,7 +103,7 @@ body{
 #side-nav{
     padding-top: 1em;
     width: 20vw;
-    height: 89vh;
+    height: 55vh;
     overflow: auto;
     background-color: #e2d6d3;
 }
@@ -95,7 +117,7 @@ body{
 }
 
 .texto_sub{
-    margin-left: 1em;
+    padding-left: 1em;
     font-size: smaller;
    
 }
@@ -201,6 +223,12 @@ body{
 @media only screen and (max-width: 600px){
     #cartao{
         width: 46vw;
+    }
+}
+
+@media only screen and (max-width: 327px){
+    #topicos .dropdown-menu{
+        margin-left: -4em;
     }
 }
 

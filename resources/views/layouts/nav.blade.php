@@ -52,7 +52,6 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    @if($view_name == "Inicio")
                         <ul id="topicos" class="mr-auto">
                             <li class="nav-item dropdown">
                                 <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,12 +60,28 @@
                                 <div id="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="#">Últimos cadastros</a>
                                     <a class="dropdown-item" href="#" >Matemática</a>
+                                    <div class="texto_sub">
+                                        <a class="dropdown-item" href="{{ route('conjuntos') }}">Conjuntos numéricos</a>
+                                        <a class="dropdown-item" href="#">Regularidades numéricas</a>
+                                        <a class="dropdown-item" href="#">Progressões aritméticas  e <br> progressões geométricas </a>
+                                        <a class="dropdown-item" href="#">Relação entre duas grandezas</a>
+                                        <a class="dropdown-item" href="#">Proporcionalidades</a>
+                                        <a class="dropdown-item" href="#">Função de 1º grau</a>
+                                        <a class="dropdown-item" href="#">Função de 2º grau</a>
+                                        <a class="dropdown-item" href="#">Crescimento </a>
+                                        <a class="dropdown-item" href="#">Função exponencial</a>
+                                        <a class="dropdown-item" href="#">inequações</a>
+                                        <a class="dropdown-item" href="#">Logaritmos</a>
+                                        <a class="dropdown-item" href="#">Função logarítmica</a>
+                                        <a class="dropdown-item" href="#">Razões trigonométricas nos <br>triângulos retângulos</a>
+                                        <a class="dropdown-item" href="#">Polígonos regulares</a>
+                                        <a class="dropdown-item" href="#">Resolução de triângulos não<br> retângulos</a>
+                                    </div>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Seus cadastros</a>
                                 </div>
                             </li>
                         </ul>
-                    @endif
                 <div class="collapse navbar-collapse" id="navbarText">
                     <a class="navbar-brand ml-2" href="{{ route('inicio') }}">
                             <img src="{{ asset('/imgs/brasao.png') }}" width="30" height="30" loading="lazy">

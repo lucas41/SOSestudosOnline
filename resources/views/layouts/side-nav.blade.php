@@ -20,8 +20,8 @@
                     <a class="nav-link" href="#">Progressões aritméticas  e <br> progressões geométricas </a>
                     <a class="nav-link" href="#">Relação entre duas grandezas</a>
                     <a class="nav-link" href="#">Proporcionalidades</a>
-                    <a class="nav-link" href="#">Função de 1ª grau</a>
-                    <a class="nav-link" href="#">Função de 2oª grau</a>
+                    <a class="nav-link" href="#">Função de 1º grau</a>
+                    <a class="nav-link" href="#">Função de 2º grau</a>
                     <a class="nav-link" href="#">Crescimento </a>
                     <a class="nav-link" href="#">Função exponencial</a>
                     <a class="nav-link" href="#">inequações</a>
