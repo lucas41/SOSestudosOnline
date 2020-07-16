@@ -14,7 +14,7 @@ class matematica extends Controller
     public function index()
     {
         $posts = Post::where('matematica', '=', 'Conjuntos numéricos')->get();
-        return view('Conjuntos numéricos', compact([ 'posts']));
+        return view('Matérias/Conjuntos', compact([ 'posts']));
     }
 
     /**

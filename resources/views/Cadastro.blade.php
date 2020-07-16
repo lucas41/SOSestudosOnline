@@ -17,7 +17,9 @@
                 <input type="radio" id="2ano" name="serie" value="2º ano">
                 <label for="2ano">2º ano &nbsp; </label>
                 <input type="radio" id="3ano" name="serie" value="3º ano">
-                <label for="3ano">3º ano</label>
+                <label for="3ano">3º ano &nbsp; </label>
+                <input type="radio" id="visitante" name="serie" value="Sou visitante">
+                <label for="3ano"><em>Sou visitante</em></label>
             </div>
         </div>
         <div class="form-row">

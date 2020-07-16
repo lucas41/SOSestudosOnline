@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-// conteudos 
-Route::get('/Conjuntos numéricos', 'matematica@index')->name('Conjuntos numéricos');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 
@@ -25,6 +24,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/post', 'PostControlador@index')->name('cadastro');
     Route::Post('/post', 'PostControlador@store');
     Route::delete('/post{id}', 'PostControlador@destroy');
+
+    // Conteudos 
+    Route::get('/Conjuntos_numericos', 'matematica@index')->name('conjuntos');
 });
 
 Route::get('/', function () { return view('auth/Welcome'); })->middleware('guest');;
