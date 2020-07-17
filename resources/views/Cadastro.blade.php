@@ -59,12 +59,21 @@
             <button type="reset" class="btn btn-secondary my-2">Cancelar</button>
         </div>
       </form>
-      <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
-        Cadastro feito com sucesso! Veja seu cadastro na <a class="alert-link" href="{{ route('inicio') }}">home</a>.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <i aria-hidden="true">&times;</i>
-        </button>
-      </div>
+      @if(session()->has('message'))
+    <div class="alert alert-success">
+        {{ session()->get('message') }}
+    </div>
+@endif
+
+@if(session()->has('erro'))
+    <div class="alert alert-danger">
+        {{ session()->get('erro') }}
+    </div>
+@endif
+
+
+
+
 </div>
 
     

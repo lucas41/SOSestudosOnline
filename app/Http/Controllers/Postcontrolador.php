@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Http\RedirectResponse;
 class Postcontrolador extends Controller
 {
     /**
@@ -42,7 +43,7 @@ class Postcontrolador extends Controller
         $post->face = $request->input('face');
         $post->matematica = $request->input('matematica');
         $post->save();
-        return redirect('/post');
+        return redirect('/post')->with('message','Cadastro feito com sucesso! Veja seu cadastro na home');
     }
 
     /**
@@ -92,7 +93,7 @@ class Postcontrolador extends Controller
             $post->delete();
 
         }
-        return redirect('/post');
+        return redirect('/post')->with('erro','Cadastro deletado com sucesso!');
         
     }
 }

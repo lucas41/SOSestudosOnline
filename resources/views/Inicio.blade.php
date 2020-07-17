@@ -22,7 +22,7 @@
                         <form method='post' action="/post{{ $post->id}}">
                             @csrf
                             <input type="hidden" name="_method" value="delete">
-                            <button type="submit" class="btn btn-sm pink">Apagar</button>
+                            <button type="submit" class="btn btn-sm pink" onclick="return confirm('Tem certeza que deseja deletar este registro?')">Apagar</button>
                         </form>
                     </div>
                 @endif
