@@ -226,14 +226,15 @@ body{
     }
 }
 
+@media only screen and (max-width: 408px){
+    #cartao{
+        width: 120vw;
+    }
+}
+
 @media only screen and (max-width: 327px){
     #topicos .dropdown-menu{
         margin-left: -4em;
     }
 }
 
-@media only screen and (max-width: 408px){
-    #cartao{
-        width: 120vw;
-    }
-}

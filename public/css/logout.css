@@ -55,7 +55,7 @@ a:hover{
     width: 60vw;
 }
 
-.first{
+#first{
     padding-top: 5em;
     min-height: 100vh;
 }
@@ -97,5 +97,15 @@ a:hover{
     }
     .first{
         padding-top: 6em;
+    }
+}
+
+@media only screen and (max-width: 408px){
+    #logo{
+        width: 15em;
+        margin-left: 0em;
+    }
+    .first{
+        padding-top: 8em;
     }
 }
