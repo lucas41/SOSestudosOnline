@@ -13,8 +13,8 @@ class Postcontrolador extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('Cadastro', compact([ 'posts']));
+            $posts = Post::all();
+            return view('Cadastro', compact([ 'posts']));
     }
 
     /**

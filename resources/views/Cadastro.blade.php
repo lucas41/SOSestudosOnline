@@ -37,9 +37,22 @@
             <h3>Mátematica</h3>
             <select class="custom-select" id="matematica" name="matematica" required>
                 <option selected>Selecione o assunto</option>
-                <option for="matematica" name="matematica" value="PA & PG">PA & PG</option>
-                <option for="matematica"  name="matematica" value="Função do 1º grau">Função do 1º grau</option>
-                <option for="matematica" name="matematica" value="Função do 2º grau">Função do 2º grau</option>
+                <option for="matematica" name="matematica" value="Conjuntos numéricos">Conjuntos numéricos</option>
+                <option for="matematica" name="matematica" value="Regularidades numéricas">Regularidades numéricas</option>
+                <option for="matematica" name="matematica" value="Progressões aritméticas  e progressões geométricas ">Progressões aritméticas  e  progressões geométricas </option>
+                <option for="matematica" name="matematica" value="Relação entre duas grandezas">Relação entre duas grandezas</option>
+                <option for="matematica" name="matematica" value="Proporcionalidades">Proporcionalidades</option>
+                <option for="matematica" name="matematica" value="Função de 1º grau">Função de 1º grau</option>
+                <option for="matematica" name="matematica" value="Função de 2º grau">Função de 2º grau</option>
+                <option for="matematica" name="matematica" value="Crescimento">Crescimento </option>
+                <option for="matematica" name="matematica" value="Função exponencial">Função exponencial</option>
+                <option for="matematica" name="matematica" value="inequações">inequações</option>
+                <option for="matematica" name="matematica" value="Logaritmos">Logaritmos</option>
+                <option for="matematica" name="matematica" value="Função logarítmica">Função logarítmica</option>
+                <option for="matematica" name="matematica" value="Razões trigonométricas nos triângulos retângulos">Razões trigonométricas nos triângulos retângulos</option>
+                <option for="matematica" name="matematica" value="Polígonos regulares">Polígonos regulares</option>
+                <option for="matematica" name="matematica" value="Resolução de triângulos não retângulos">Resolução de triângulos não retângulos</option>
+
             </select>
         </div>
         <div class="form-group">
