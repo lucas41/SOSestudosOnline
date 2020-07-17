@@ -35,11 +35,11 @@ body::-webkit-scrollbar-thumb
     background-color: #f5efec;
 }
 
-.card a{
+a{
     color: #AB3B61;
 }
 
-.card a:hover{
+a:hover{
     color: #e45d74;
 }
 
