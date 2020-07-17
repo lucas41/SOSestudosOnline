@@ -52,7 +52,6 @@
                 <option for="matematica" name="matematica" value="Razões trigonométricas nos triângulos retângulos">Razões trigonométricas nos triângulos retângulos</option>
                 <option for="matematica" name="matematica" value="Polígonos regulares">Polígonos regulares</option>
                 <option for="matematica" name="matematica" value="Resolução de triângulos não retângulos">Resolução de triângulos não retângulos</option>
-
             </select>
         </div>
         <div class="form-group">

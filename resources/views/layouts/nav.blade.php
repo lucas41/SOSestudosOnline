@@ -58,27 +58,27 @@
                                 Tópicos
                                 </a>
                                 <div id="menu" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Últimos cadastros</a>
-                                    <a class="dropdown-item" href="#" >Matemática</a>
+                                    <a class="dropdown-item" href="{{ route('inicio') }}">Últimos cadastros</a>
+                                    <a class="dropdown-item">Matemática</a>
                                     <div class="texto_sub">
                                         <a class="dropdown-item" href="{{ route('conjuntos') }}">Conjuntos numéricos</a>
-                                        <a class="dropdown-item" href="#">Regularidades numéricas</a>
-                                        <a class="dropdown-item" href="#">Progressões aritméticas  e <br> progressões geométricas </a>
-                                        <a class="dropdown-item" href="#">Relação entre duas grandezas</a>
-                                        <a class="dropdown-item" href="#">Proporcionalidades</a>
-                                        <a class="dropdown-item" href="#">Função de 1º grau</a>
-                                        <a class="dropdown-item" href="#">Função de 2º grau</a>
-                                        <a class="dropdown-item" href="#">Crescimento </a>
-                                        <a class="dropdown-item" href="#">Função exponencial</a>
-                                        <a class="dropdown-item" href="#">inequações</a>
-                                        <a class="dropdown-item" href="#">Logaritmos</a>
-                                        <a class="dropdown-item" href="#">Função logarítmica</a>
-                                        <a class="dropdown-item" href="#">Razões trigonométricas nos <br>triângulos retângulos</a>
-                                        <a class="dropdown-item" href="#">Polígonos regulares</a>
-                                        <a class="dropdown-item" href="#">Resolução de triângulos não<br> retângulos</a>
+                                        <a class="dropdown-item" href="{{ route('regulariedade') }}">Regularidades numéricas</a>
+                                        <a class="dropdown-item" href="{{ route('Progressoes') }}">Progressões aritméticas  e <br> progressões geométricas </a>
+                                        <a class="dropdown-item" href="{{ route('duasgrandezas') }}">Relação entre duas grandezas</a>
+                                        <a class="dropdown-item" href="{{ route('Proporcionalidades') }}">Proporcionalidades</a>
+                                        <a class="dropdown-item" href="{{ route('Funcao_de_1_grau') }}">Função de 1º grau</a>
+                                        <a class="dropdown-item" href="{{ route('Funcao_de_2_grau') }}">Função de 2º grau</a>
+                                        <a class="dropdown-item" href="{{ route('Crescimento') }}">Crescimento </a>
+                                        <a class="dropdown-item" href="{{ route('Funcao_exponencial') }}">Função exponencial</a>
+                                        <a class="dropdown-item" href="{{ route('inequações') }}">Inequações</a>
+                                        <a class="dropdown-item" href="{{ route('Logaritmos') }}">Logaritmos</a>
+                                        <a class="dropdown-item" href="{{ route('Função_logarítmica') }}">Função logarítmica</a>
+                                        <a class="dropdown-item" href="{{ route('trigonométricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>
+                                        <a class="dropdown-item" href="{{ route('Polígonos_regulares') }}">Polígonos regulares</a>
+                                        <a class="dropdown-item" href="{{ route('triângulos_não_retângulos') }}">Resolução de triângulos não<br> retângulos</a>
                                     </div>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Seus cadastros</a>
+                                    <a class="dropdown-item" href="{{ route('seus_cadastros') }}">Seus cadastros</a>
                                 </div>
                             </li>
                         </ul>

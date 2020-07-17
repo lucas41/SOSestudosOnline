@@ -24,7 +24,7 @@
                     <a class="nav-link" href="{{ route('Funcao_de_2_grau') }}">Função de 2º grau</a>
                     <a class="nav-link" href="{{ route('Crescimento') }}">Crescimento </a>
                     <a class="nav-link" href="{{ route('Funcao_exponencial') }}">Função exponencial</a>
-                    <a class="nav-link" href="{{ route('inequações') }}">inequações</a>
+                    <a class="nav-link" href="{{ route('inequações') }}">Inequações</a>
                     <a class="nav-link" href="{{ route('Logaritmos') }}">Logaritmos</a>
                     <a class="nav-link" href="{{ route('Função_logarítmica') }}">Função logarítmica</a>
                     <a class="nav-link" href="{{ route('trigonométricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>

@@ -42,11 +42,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/Polígonos_regulares', 'matematica@Polígonos_regulares')->name('Polígonos_regulares');
     Route::get('/triângulos_não_retângulos', 'matematica@triângulos_não_retângulos')->name('triângulos_não_retângulos');
 
-    //seus posts
-
-   Route::get('/seus_cadastros', 'matematica@seus_cadastros')->name('seus_cadastros');
-   
-    
+    // Seus posts
+    Route::get('/seus_cadastros', 'matematica@seus_cadastros')->name('seus_cadastros');
 });
 
 Route::get('/', function () { return view('auth/Welcome'); })->middleware('guest');;
