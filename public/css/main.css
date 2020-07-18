@@ -188,6 +188,16 @@ body{
     color: #316fb3;
 }
 
+.alert-success{
+   background-color: rgb(99, 192, 121);
+   color: white
+}
+
+.alert-danger{
+    background-color: rgb(199, 62, 62);
+    color: white;
+}
+
 /* Responsibilidade */
 @media only screen and (max-width: 1114px){
     #cartao{

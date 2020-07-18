@@ -43,7 +43,7 @@ class Postcontrolador extends Controller
         $post->face = $request->input('face');
         $post->matematica = $request->input('matematica');
         $post->save();
-        return redirect('/post')->with('message','Cadastro feito com sucesso! Veja seu cadastro na home');
+        return redirect('/post')->with('message','Cadastro feito com sucesso! Veja seu cadastro na Home.');
     }
 
     /**
@@ -93,7 +93,7 @@ class Postcontrolador extends Controller
             $post->delete();
 
         }
-        return redirect('/post')->with('erro','Cadastro deletado com sucesso!');
+        return redirect('/post')->with('erro','Cadastro deletado com sucesso! Se quiser, crie um novo cadastro.');
         
     }
 }
