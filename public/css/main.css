@@ -99,6 +99,10 @@ body{
 	background-image: #0000;
 }
 
+.card-columns{
+    column-gap: 0rem;
+}
+
 /* Menu lateral */
 #side-nav{
     padding-top: 1em;
@@ -143,7 +147,7 @@ body{
 /* Cartões dos alunos */
 #cartao{
     border:none;    
-    margin-right: 1em;
+    margin-right: none;
     width: 25vw;
     background-color: #BBB2B5;
     margin-bottom: 1em;  
@@ -167,11 +171,6 @@ body{
 
 #card h6{
     margin-bottom: 0px;
-}
-
-.card-body{
-    display: table-cell;
-    vertical-align: middle;
 }
 
 #serie{
@@ -224,21 +223,34 @@ body{
     }
 }
 
-@media only screen and (max-width: 718px){
+@media only screen and (min-width: 2500px){
+    .card-columns{
+        column-count: 4;
+        
+    }
     #cartao{
-        width: 47vw;
+        width: 19vw;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 718px){
     #cartao{
         width: 46vw;
     }
+    .card-columns{
+        column-count: 2;
+    }
 }
 
-@media only screen and (max-width: 408px){
+@media only screen and (max-width: 575px){
     #cartao{
-        width: 120vw;
+        width: 90vw;
+    }
+    .card-columns{
+        column-count: 1;
+    }
+    #page{
+        margin-left: 3vw;
     }
 }
 
