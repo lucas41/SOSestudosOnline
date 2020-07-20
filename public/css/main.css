@@ -59,6 +59,11 @@ body{
     background-color: #c9b9b4;
 }
 
+#principal{
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
 /* Div dos cartões */
 #page{
     margin-top: 1em;
