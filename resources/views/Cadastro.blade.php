@@ -10,7 +10,6 @@
                 <label for="name">Nome</label>
                 <input type="name" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" readonly="readonly" required>
             </div>
-            <input  class="form-control" id="idu" name="idu" value="{{ Auth::user()->id }}">
             <div id="serie" class="form-group">
                 <label for="serie">Série</label><br>
                 <input type="radio" id="1ano" name="serie" value="1º ano">
@@ -55,6 +54,7 @@
                 <option for="matematica" name="matematica" value="Resolução de triângulos não retângulos">Resolução de triângulos não retângulos</option>
             </select>
         </div>
+        <input type="hidden" class="form-control" id="idu" name="idu" value="{{ Auth::user()->id }}">
         <div class="form-group">
             <button type="submit" class="btn pink my-2">Enviar</button>
             <button type="reset" class="btn btn-secondary my-2">Cancelar</button>
@@ -71,7 +71,7 @@
     @endif
 
     @if(session()->has('erro'))
-        <div class="alert alert-danger fade show shadow-sm" role="alert">
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
         {{ session()->get('erro') }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <i aria-hidden="true">&times;</i>
