@@ -9,7 +9,7 @@
     }
 </style>
 
-<div class="row" style="margin-left: 0px; margin-right: 0px;">
+<div class="row" id="principal">
     <div id="side-nav" class="border border-darken-1">
         <nav class="nav flex-column">
             <h5><a class="nav-link" href="{{ route('inicio') }}">Últimos cadastros</a></h5>

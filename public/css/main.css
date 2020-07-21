@@ -59,6 +59,11 @@ body{
     background-color: #c9b9b4;
 }
 
+#principal{
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+
 /* Div dos cartões */
 #page{
     margin-top: 1em;
@@ -97,6 +102,10 @@ body{
 	border-radius: 10px;
 	background-color: #123D6A;
 	background-image: #0000;
+}
+
+.card-columns{
+    column-gap: 0rem;
 }
 
 /* Menu lateral */
@@ -143,7 +152,7 @@ body{
 /* Cartões dos alunos */
 #cartao{
     border:none;    
-    margin-right: 1em;
+    margin-right: none;
     width: 25vw;
     background-color: #BBB2B5;
     margin-bottom: 1em;  
@@ -169,11 +178,6 @@ body{
     margin-bottom: 0px;
 }
 
-.card-body{
-    display: table-cell;
-    vertical-align: middle;
-}
-
 #serie{
     margin-left: 1em;
 }
@@ -186,6 +190,16 @@ body{
 #perguntas .btn-link:hover{
     text-decoration: none;
     color: #316fb3;
+}
+
+.alert-success{
+   background-color: rgb(99, 192, 121);
+   color: white
+}
+
+.alert-danger{
+    background-color: rgb(199, 62, 62);
+    color: white;
 }
 
 /* Responsibilidade */
@@ -214,21 +228,34 @@ body{
     }
 }
 
-@media only screen and (max-width: 718px){
+@media only screen and (min-width: 2500px){
+    .card-columns{
+        column-count: 4;
+        
+    }
     #cartao{
-        width: 47vw;
+        width: 19vw;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 718px){
     #cartao{
         width: 46vw;
     }
+    .card-columns{
+        column-count: 2;
+    }
 }
 
-@media only screen and (max-width: 408px){
+@media only screen and (max-width: 575px){
     #cartao{
-        width: 120vw;
+        width: 90vw;
+    }
+    .card-columns{
+        column-count: 1;
+    }
+    #page{
+        margin-left: 3vw;
     }
 }
 

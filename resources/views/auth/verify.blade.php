@@ -5,20 +5,19 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
-
                 <div class="card-body">
+                    <h4>{{ __('Verificação de E-mail') }}</h4>
+                    <hr>
                     @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
-                        </div>
+                        <p>
+                            {{ __('Um link de verificação foi enviado para o endereço de email fornecido.') }}
+                        </p>
                     @endif
 
-                    {{ __('Before proceeding, please check your email for a verification link.') }}
-                    {{ __('If you did not receive the email') }},
+                    <p>{{ __('Se você não recebeu o link') }},</p>
                     <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                         @csrf
-                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
+                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('Clique para enviar novamente') }}</button>.
                     </form>
                 </div>
             </div>
