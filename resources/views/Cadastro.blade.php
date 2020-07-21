@@ -10,6 +10,7 @@
                 <label for="name">Nome</label>
                 <input type="name" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" readonly="readonly" required>
             </div>
+            <input  class="form-control" id="idu" name="idu" value="{{ Auth::user()->id }}">
             <div id="serie" class="form-group">
                 <label for="serie">Série</label><br>
                 <input type="radio" id="1ano" name="serie" value="1º ano">

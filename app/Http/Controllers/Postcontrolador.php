@@ -38,6 +38,7 @@ class Postcontrolador extends Controller
     {
         $post = new Post();
         $post->name = $request->input('name');
+        $post->idu = $request->input('idu');
         $post->serie = $request->input('serie');
         $post->insta = $request->input('insta');
         $post->face = $request->input('face');

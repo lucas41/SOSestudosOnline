@@ -17,7 +17,7 @@
                             <a href="{{$post->face}}" target="none"> <span class="fab fa-facebook-square"> </span></a>
                             <a href="{{$post->insta}}" target="none"> <span class="fab fa-instagram"> </span></a> 
                         </h6>
-                        @if (Auth::user()->name == $post->name)
+                        @if (Auth::user()->id == $post->idu)
                             <div class="text-right">
                                 <form method='post' action="/post{{ $post->id}}">
                                     @csrf

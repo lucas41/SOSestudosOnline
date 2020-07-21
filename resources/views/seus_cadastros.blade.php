@@ -6,7 +6,7 @@
         <div class="row">
    
             @foreach($posts as $post)
-            @if (Auth::user()->name == $post->name)
+            @if (Auth::user()->id == $post->idu)
                 <div class="card" id="cartao">
                     <div class="card-body">
                         <h4 class="card-title" title="{{ $post->name}}">
@@ -19,7 +19,7 @@
                             <a href="{{$post->face}}" target="none"> <span class="fab fa-facebook-square"> </span></a>
                             <a href="{{$post->insta}}" target="none"> <span class="fab fa-instagram"> </span></a> 
                         </h6>
-                        @if (Auth::user()->name == $post->name)
+                        @if (Auth::user()->id == $post->idu)
                             <div class="text-right">
                                 <form method='post' action="/post{{ $post->id}}">
                                     @csrf
