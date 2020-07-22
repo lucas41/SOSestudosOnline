@@ -36,15 +36,21 @@ class Postcontrolador extends Controller
      */
     public function store(Request $request)
     {
-        $post = new Post();
-        $post->name = $request->input('name');
-        $post->idu = $request->input('idu');
-        $post->serie = $request->input('serie');
-        $post->insta = $request->input('insta');
-        $post->face = $request->input('face');
-        $post->matematica = $request->input('matematica');
-        $post->save();
-        return redirect('/post')->with('message','Cadastro feito com sucesso! Veja seu cadastro na Home.');
+        try {
+            $post = new Post();
+            $post->name = $request->input('name');
+            $post->idu = $request->input('idu');
+            $post->serie = $request->input('serie');
+            $post->insta = $request->input('insta');
+            $post->face = $request->input('face');
+            $post->matematica = $request->input('matematica');
+            $post->save();
+            return redirect('/post')->with('message','Cadastro feito com sucesso! Veja seu cadastro na Home.');
+
+        } catch (Exception $e) {
+            return redirect('/post')->with('error','Um erro ocorreu: '+ $e);
+
+        }
     }
 
     /**
@@ -89,12 +95,17 @@ class Postcontrolador extends Controller
      */
     public function destroy($id)
     {
-        $post = post::find($id);
-        if(isset($post)) {
-            $post->delete();
+        try {
+            $post = post::find($id);
+            if(isset($post)) {
+                $post->delete();
+            }
+            
+            return redirect('/post')->with('deleted','Cadastro deletado com sucesso! Se quiser, crie um novo cadastro.');
+
+        } catch (Exception $e) {
+            return redirect('/post')->with('error','Um erro ocorreu: '+ $e);
 
         }
-        return redirect('/post')->with('erro','Cadastro deletado com sucesso! Se quiser, crie um novo cadastro.');
-        
     }
 }

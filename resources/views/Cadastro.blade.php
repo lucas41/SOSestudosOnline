@@ -60,7 +60,7 @@
             <button type="reset" class="btn btn-secondary my-2">Cancelar</button>
         </div>
       </form>
-      
+
     @if(session()->has('message'))
         <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
         {{ session()->get('message') }}
@@ -68,11 +68,18 @@
                 <i aria-hidden="true">&times;</i>
             </button>
         </div>
-    @endif
 
-    @if(session()->has('erro'))
+    @elseif(session()->has('deleted'))
         <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
-        {{ session()->get('erro') }}
+        {{ session()->get('deleted') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <i aria-hidden="true">&times;</i>
+            </button>
+        </div>
+        
+    @elseif(session()->has('error'))
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
+        {{ session()->get('error') }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <i aria-hidden="true">&times;</i>
             </button>
