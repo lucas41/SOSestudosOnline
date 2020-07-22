@@ -23,7 +23,7 @@
                                     <form method='post' action="/post{{ $post->id}}">
                                         @csrf
                                         <input type="hidden" name="_method" value="delete">
-                                        <button type="submit" class="btn btn-sm pink">Apagar</button>
+                                        <button type="submit" class="btn btn-sm pink" onclick="confirmar()">Apagar</button>
                                     </form>
                                 </div>
                             @endif

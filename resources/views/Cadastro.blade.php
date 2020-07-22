@@ -36,7 +36,7 @@
         <div class="form-group">
             <h3>Mátematica</h3>
             <select class="custom-select" id="matematica" name="matematica" required>
-                <option selected>Selecione o assunto</option>
+                <option selected value="">Selecione o assunto</option>
                 <option for="matematica" name="matematica" value="Conjuntos numéricos">Conjuntos numéricos</option>
                 <option for="matematica" name="matematica" value="Regularidades numéricas">Regularidades numéricas</option>
                 <option for="matematica" name="matematica" value="Progressões aritméticas  e progressões geométricas ">Progressões aritméticas  e  progressões geométricas </option>
@@ -46,7 +46,7 @@
                 <option for="matematica" name="matematica" value="Função de 2º grau">Função de 2º grau</option>
                 <option for="matematica" name="matematica" value="Crescimento">Crescimento </option>
                 <option for="matematica" name="matematica" value="Função exponencial">Função exponencial</option>
-                <option for="matematica" name="matematica" value="inequações">inequações</option>
+                <option for="matematica" name="matematica" value="Inequações">Inequações</option>
                 <option for="matematica" name="matematica" value="Logaritmos">Logaritmos</option>
                 <option for="matematica" name="matematica" value="Função logarítmica">Função logarítmica</option>
                 <option for="matematica" name="matematica" value="Razões trigonométricas nos triângulos retângulos">Razões trigonométricas nos triângulos retângulos</option>
