@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Language Lines
+    | Password Reminder Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -13,10 +13,10 @@ return [
     |
     */
 
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have emailed your password reset link!',
-    'throttled' => 'Please wait before retrying.',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that email address.",
+    'password' => 'A senha deve possuir no mínimo 6 caracteres e ser igual à confirmação.',
+    'reset' => 'Sua senha foi redefinida!',
+    'sent' => 'O link para redefinição de senha foi enviado para o seu e-mail!',
+    'token' => 'O token para recuperação de senha é inválido.',
+    'user' => 'Não encontramos nenhum usuário com esse endereço de e-mail.',
 
 ];

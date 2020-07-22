@@ -18,6 +18,7 @@ class Postcontrolador extends Controller
             return view('Cadastro', compact([ 'posts']));
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -53,6 +54,7 @@ class Postcontrolador extends Controller
         }
     }
 
+   
     /**
      * Display the specified resource.
      *
