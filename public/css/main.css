@@ -178,8 +178,8 @@ body{
     margin-bottom: 0px;
 }
 
-#serie{
-    margin-left: 1em;
+.fa-question-circle{
+    cursor: pointer;
 }
 
 #perguntas .card-header, .btn-link{

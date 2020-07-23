@@ -2,6 +2,25 @@
 
 @section('content')
 <div class="container">
+
+    <!-- Modal -->
+    <div class="modal fade" id="visitante" tabindex="-1" role="dialog" aria-labelledby="visitanteLabel" aria-hidden="true" style="z-index:9999999">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="visitanteLabel">Sou visitante</h5>
+                </div>
+                <div class="modal-body">
+                    A opção "Sou visitante" é pra quem não é aluno da EE "Padre Armani" :)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn pink" data-dismiss="modal">Entendi!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim da Modal -->
+
     <h1 class="display-4">Novo cadastro</h1>
     <form method="POST" action="/post " enctype="multipart/form-data" onSubmit'>
         @csrf
@@ -10,7 +29,7 @@
                 <label for="name">Nome</label>
                 <input type="name" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" readonly="readonly" required>
             </div>
-            <div id="serie" class="form-group">
+            <div class="form-group ml-2">
                 <label for="serie">Série</label><br>
                 <input type="radio" id="1ano" name="serie" value="1º ano">
                 <label for="1ano">1º ano &nbsp; </label>
@@ -20,6 +39,7 @@
                 <label for="3ano">3º ano &nbsp; </label>
                 <input type="radio" id="visitante" name="serie" value="Sou visitante">
                 <label for="3ano"><em>Sou visitante</em></label>
+                <span class="fas fa-question-circle" data-toggle="modal" data-target="#visitante"></span>
             </div>
         </div>
         <div class="form-row">
@@ -76,7 +96,7 @@
                 <i aria-hidden="true">&times;</i>
             </button>
         </div>
-        
+
     @elseif(session()->has('error'))
         <div class="alert alert-danger alert-dismissible fade show shadow-sm" role="alert">
         {{ session()->get('error') }}
@@ -85,6 +105,5 @@
             </button>
         </div>
     @endif
-
 </div>
 @endsection
