@@ -21,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
-                        <a class="navbar-brand ml-2" href="/#first">
+                        <a class="navbar-brand ml-2" href="/#apresentacao">
                             <img src="{{ asset('/imgs/brasao.png') }}" width="30" height="30" loading="lazy">
                             SOS
                         </a>

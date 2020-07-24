@@ -1,7 +1,7 @@
 @extends('layouts.nav')
 
 @section('content')
-<div class="container">
+<section id="ajuda" class="container">
     <h1 class="display-4">Perguntas frequentes</h1>
     <div class="accordion" id="perguntas">
         <div class="card">
@@ -16,10 +16,10 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#perguntas">
             <div class="card-body">
                 <p><b>No app: </b>vá até seu perfil e clique no botão cinza ao lado do "Adicionar ao story". O link estará no final da página, pronto para ser copiado :)</p>
-                <div class="row">
+                <figure class="row">
                     <img class="rounded ml-md-auto mb-3" src="{{ asset('/imgs/face1.png') }}" alt="" width="300rem">
                     <img class="rounded mr-md-auto mb-3" src="{{ asset('/imgs/face2.png') }}" alt="" width="300rem">
-                </div>
+                </figure>
                 <p><b>No computador: </b>acesse seu perfil e copie a URL do navegador.</p>
             </div>
             </div>
@@ -67,5 +67,5 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 @endSection

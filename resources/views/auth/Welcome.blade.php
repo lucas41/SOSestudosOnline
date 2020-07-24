@@ -1,8 +1,8 @@
 @extends('layouts.nav')
 
 @section('content')
-<div class="text-white">
-    <div id="first">
+<div id="welcome" class="text-white">
+    <header id="apresentacao">
         <img src="{{ asset('/imgs/img_index.png') }}" class="img-index">
         <div class="col-sm-12 mobile">
             <img src="{{ asset('/imgs/logov1.png') }}" id="logo">
@@ -10,11 +10,10 @@
                 <h3 class="description">Entre em contato com quem pode te ajudar e ajude quem precisar.</h3>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="section">
+    <section>
         <div class="container" id="sobre">
-            <br><br>
             <h1><i class="fas fa-address-card"></i> Sobre nós</h1>
             <div>
                 <div class="row content">
@@ -31,15 +30,14 @@
                         <p>A iniciativa foi inspirada na teoria de William Glasser (1925-2013), um psiquiatra americano, que diz que 95% do conhecimento é aprendido quando temos que ensinar alguém. Você pode ler um pouco mais sobre o estudo <a href="http://www.institutopuruna.com.br/como-aprendemos-a-teoria-da-escolha-de-william-glasser/" target="none">aqui</a>.</p>
                     </div>
                 </div>
-                <div class="text-center">
+                <figure class="text-center">
                     <img src="{{ asset('/imgs/livros.png') }}" width="100%" alt="">
-                </div>
+                </figure>
             </div>
-            
         </div>
-    </div>
+    </section>
 
-    <div class="section">
+    <section>
         <div class="container" id="contato">
             <h1><i class="fas fa-comments"></i> Contato</h1>
             <div>
@@ -66,7 +64,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 </div>
 <script src="https://unpkg.com/scrollreveal@4"></script>
 <script src="{{ asset('/js/animations.js') }}"></script>

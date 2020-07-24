@@ -55,12 +55,12 @@ a:hover{
     width: 60vw;
 }
 
-#first{
+#apresentacao{
     padding-top: 5em;
     min-height: 100vh;
 }
 
-.section{
+#sobre, #contato{
     padding-top: 3em;
     min-height: 100vh;
 }
@@ -92,10 +92,12 @@ a:hover{
         margin-top: 10vh;
         text-align: center;
     }
+
     .description{
         margin-left: none;
     }
-    .first{
+
+    #apresentacao{
         padding-top: 6em;
     }
 }
@@ -105,7 +107,8 @@ a:hover{
         width: 15em;
         margin-left: 0em;
     }
-    .first{
+    
+    #apresentacao{
         padding-top: 8em;
     }
 }

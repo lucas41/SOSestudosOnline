@@ -1,7 +1,7 @@
 @extends('layouts.nav')
 
 @section('content')
-<div class="container">
+<section class="container">
 
     <!-- Modal -->
     <div class="modal fade" id="visitante" tabindex="-1" role="dialog" aria-labelledby="visitanteLabel" aria-hidden="true" style="z-index:9999999">
@@ -105,5 +105,5 @@
             </button>
         </div>
     @endif
-</div>
+</section>
 @endsection

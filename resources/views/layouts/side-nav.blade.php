@@ -9,8 +9,8 @@
     }
 </style>
 
-<div class="row" id="principal">
-    <div id="side-nav" class="border border-darken-1">
+<section class="row" id="principal">
+    <aside class="border border-darken-1">
         <nav class="nav flex-column">
             <h5><a class="nav-link" href="{{ route('inicio') }}">Últimos cadastros</a></h5>
             <a class="nav-link" data-toggle="collapse" href="#MathCollapse" role="button" aria-expanded="false" aria-controls="MathCollapse">Matemática <i class="fas fa-sort-down"></i></a>
@@ -34,9 +34,9 @@
                 </div>
             <a class="nav-link" href="{{ route('seus_cadastros') }}">Seus cadastros</a>
         </nav>
-    </div>
-    <div id="page">
+    </aside>
+    <article id="cartoes">
         @yield('materia')
-    </div>
-</div>
+    </article>
+</section>
 @endsection

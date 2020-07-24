@@ -21,30 +21,12 @@ body{
     color: rgba(255,255,255,.75);
 }
 
-#topicos .dropdown-menu{
+#menu{
     background-color: #e2d6d3; 
     width: 15em;
     min-width: 0em;
     height: 80vh;
     overflow: auto;
-}
-
-#topicos .dropdown-menu::-webkit-scrollbar-track
-{
-	background-color: #e2d6d3;
-	border-radius: 10px;
-}
-
-#topicos .dropdown-menu::-webkit-scrollbar
-{
-	width: 10px;
-}
-
-#topicos .dropdown-menu::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #ab3b6070;
-	background-image: #0000;
 }
 
 #topicos .dropdown-divider{
@@ -65,7 +47,7 @@ body{
 }
 
 /* Div dos cartões */
-#page{
+#cartoes{
     margin-top: 1em;
     width: 79vw;
     margin-left: 0.5vw;
@@ -74,34 +56,15 @@ body{
     overflow-x: hidden;
 }
 
-#page span{
+#cartoes span{
     color: #AB3B61;
 }
-#page span:hover{
+#cartoes span:hover{
     color: #e45d74;
 }
 
-#page .row{
+#cartoes .row{
     margin-left: 0.1em;
-}
-
-/* Scrollbar personalizada */
-#page::-webkit-scrollbar-track
-{
-	background-color: #EDE2DC;
-	border-radius: 10px;
-}
-
-#page::-webkit-scrollbar
-{
-	width: 10px;
-}
-
-#page::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #123D6A;
-	background-image: #0000;
 }
 
 .card-columns{
@@ -109,7 +72,7 @@ body{
 }
 
 /* Menu lateral */
-#side-nav{
+#principal aside{
     padding-top: 1em;
     width: 20vw;
     height: 91vh;
@@ -117,11 +80,11 @@ body{
     background-color: #e2d6d3;
 }
 
-#side-nav .nav-link{
+#principal aside .nav-link{
     color: #AB3B61;
 }
 
-#side-nav .nav-link:hover{
+#principal aside .nav-link:hover{
     background-color: #c9b9b4;
 }
 
@@ -129,24 +92,6 @@ body{
     padding-left: 1em;
     font-size: smaller;
    
-}
-
-#side-nav::-webkit-scrollbar-track
-{
-	background-color: #e2d6d3;
-	border-radius: 10px;
-}
-
-#side-nav::-webkit-scrollbar
-{
-	width: 10px;
-}
-
-#side-nav::-webkit-scrollbar-thumb
-{
-	border-radius: 10px;
-	background-color: #ab3b6070;
-	background-image: #0000;
 }
 
 /* Cartões dos alunos */
@@ -202,6 +147,53 @@ body{
     color: white;
 }
 
+/* Scrollbars personalizadas */
+#menu::-webkit-scrollbar-track{
+	background-color: #e2d6d3;
+	border-radius: 10px;
+}
+
+#menu::-webkit-scrollbar{
+	width: 10px;
+}
+
+#menu::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #ab3b6070;
+	background-image: #0000;
+}
+
+#cartoes::-webkit-scrollbar-track{
+	background-color: #EDE2DC;
+	border-radius: 10px;
+}
+
+#cartoes::-webkit-scrollbar{
+	width: 10px;
+}
+
+#cartoes::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #123D6A;
+	background-image: #0000;
+}
+
+#principal aside::-webkit-scrollbar-track{
+	background-color: #e2d6d3;
+	border-radius: 10px;
+}
+
+#principal aside::-webkit-scrollbar{
+	width: 10px;
+}
+
+#principal aside::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #ab3b6070;
+	background-image: #0000;
+}
+
 /* Responsibilidade */
 @media only screen and (max-width: 1114px){
     #cartao{
@@ -214,10 +206,10 @@ body{
     #topicos{
         display: flex;
     }
-    #side-nav{
+    #principal aside{
         display: none;
     }
-    #page{
+    #cartoes{
         width: 103vw;
         margin-left: 1vw;
         height: 85vh;
@@ -254,13 +246,13 @@ body{
     .card-columns{
         column-count: 1;
     }
-    #page{
+    #cartoes{
         margin-left: 3vw;
     }
 }
 
 @media only screen and (max-width: 327px){
-    #topicos .dropdown-menu{
+    #menu{
         margin-left: -4em;
     }
 }

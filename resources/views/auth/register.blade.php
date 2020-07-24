@@ -1,7 +1,7 @@
 @extends('layouts.nav')
 
 @section('content')
-<div class="container">
+<section class="container">
     <div class="row justify-content-center">
         <div class="col-md-7">
             <div class="card">
@@ -69,5 +69,5 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 @endsection
