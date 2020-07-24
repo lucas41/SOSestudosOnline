@@ -24,7 +24,7 @@
     <h1 class="display-4">Novo cadastro</h1>
     <form method="POST" action="/post " enctype="multipart/form-data" onSubmit'>
         @csrf
-        <div class="form-row">
+        <section class="form-row">
             <div class="form-group col-md-6">
                 <label for="name">Nome</label>
                 <input type="name" class="form-control" id="name" name="name" value="{{ Auth::user()->name }}" readonly="readonly" required>
@@ -41,8 +41,8 @@
                 <label for="3ano"><em>Sou visitante</em></label>
                 <span class="fas fa-question-circle" data-toggle="modal" data-target="#visitante"></span>
             </div>
-        </div>
-        <div class="form-row">
+        </section>
+        <section class="form-row">
             <div class="form-group col-md-6">
                 <label for="insta">Instagram</label>
                 <input type="text" class="form-control" id="insta" name="insta" required>
@@ -51,10 +51,10 @@
                 <label for="face">Facebook</label>
                 <input type="text" class="form-control" id="face" name="face" required>
             </div>
-        </div>
+        </section>
         
-        <div class="form-group">
-            <h3>Mátematica</h3>
+        <section class="form-group">
+            <label for="matematica"><h3>Mátematica</h3></label> 
             <select class="custom-select" id="matematica" name="matematica" required>
                 <option selected value="">Selecione o assunto</option>
                 <option for="matematica" name="matematica" value="Conjuntos numéricos">Conjuntos numéricos</option>
@@ -73,7 +73,7 @@
                 <option for="matematica" name="matematica" value="Polígonos regulares">Polígonos regulares</option>
                 <option for="matematica" name="matematica" value="Resolução de triângulos não retângulos">Resolução de triângulos não retângulos</option>
             </select>
-        </div>
+        </section>
         <input type="hidden" class="form-control" id="idu" name="idu" value="{{ Auth::user()->id }}">
         <div class="form-group">
             <button type="submit" class="btn pink my-2">Enviar</button>

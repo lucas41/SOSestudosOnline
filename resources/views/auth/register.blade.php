@@ -9,7 +9,7 @@
                     <h3 class="card-title text-center">{{ __('Cadastre-se') }}</h3>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-                        <div class="form-group">
+                        <section class="form-group">
                             <label for="name" class="col-md-4 col-form-label">{{ __('Nome') }}</label>
 
                             <div class="col-md-12">
@@ -21,9 +21,9 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </section>
 
-                        <div class="form-group">
+                        <section class="form-group">
                             <label for="email" class="col-md-4 col-form-label">{{ __('E-Mail') }}</label>
 
                             <div class="col-md-12">
@@ -35,8 +35,8 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-                        <div class="form-row">
+                        </section>
+                        <section class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="password" class="col-md-4 col-form-label">{{ __('Senha') }}</label>
 
@@ -58,12 +58,12 @@
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group text-center">
+                        </section>
+                        <section class="form-group text-center">
                                 <button type="submit" class="btn pink">
-                                    {{ __('Register') }}
+                                    {{ __('Cadastrar') }}
                                 </button>
-                        </div>
+                        </section>
                     </form>
                 </div>
             </div>
