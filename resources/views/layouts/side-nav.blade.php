@@ -24,12 +24,12 @@
                     <a class="nav-link" href="{{ route('Funcao_de_2_grau') }}">Função de 2º grau</a>
                     <a class="nav-link" href="{{ route('Crescimento') }}">Crescimento </a>
                     <a class="nav-link" href="{{ route('Funcao_exponencial') }}">Função exponencial</a>
-                    <a class="nav-link" href="{{ route('inequações') }}">Inequações</a>
+                    <a class="nav-link" href="{{ route('inequacoes') }}">Inequações</a>
                     <a class="nav-link" href="{{ route('Logaritmos') }}">Logaritmos</a>
-                    <a class="nav-link" href="{{ route('Função_logarítmica') }}">Função logarítmica</a>
-                    <a class="nav-link" href="{{ route('trigonométricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>
-                    <a class="nav-link" href="{{ route('Polígonos_regulares') }}">Polígonos regulares</a>
-                    <a class="nav-link" href="{{ route('triângulos_não_retângulos') }}">Resolução de triângulos não<br> retângulos</a>
+                    <a class="nav-link" href="{{ route('Funcao_logaritmica') }}">Função logarítmica</a>
+                    <a class="nav-link" href="{{ route('trigonometricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>
+                    <a class="nav-link" href="{{ route('Poligonos_regulares') }}">Polígonos regulares</a>
+                    <a class="nav-link" href="{{ route('triangulos_nao_retangulos') }}">Resolução de triângulos não<br> retângulos</a>
                    
                 </div>
             <a class="nav-link" href="{{ route('seus_cadastros') }}">Seus cadastros</a>

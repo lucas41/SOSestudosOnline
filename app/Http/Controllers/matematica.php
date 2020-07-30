@@ -14,91 +14,91 @@ class matematica extends Controller
     public function conjunto()
     {
         $posts = Post::where('matematica', '=', 'Conjuntos numéricos')->get();
-        return view('Matérias/Conjuntos', compact([ 'posts']));
+        return view('Materias/Conjuntos', compact([ 'posts']));
     }
 
     public function Regularidades()
     {
         $posts = Post::where('matematica', '=', 'Regularidades numéricas')->get();
-        return view('Matérias/regularidade', compact([ 'posts']));
+        return view('Materias/regularidade', compact([ 'posts']));
     }
 
     public function Progressoes()
     {
         $posts = Post::where('matematica', '=', 'Progressões aritméticas  e progressões geométricas')->get();
-        return view('Matérias/Progressoes', compact([ 'posts']));
+        return view('Materias/Progressoes', compact([ 'posts']));
     }
 
     public function duasgrandezas()
     {
         $posts = Post::where('matematica', '=', 'Relação entre duas grandezas')->get();
-        return view('Matérias/duasgrandezas', compact([ 'posts']));
+        return view('Materias/duasgrandezas', compact([ 'posts']));
     }
 
     public function Proporcionalidades()
     {
         $posts = Post::where('matematica', '=', 'Proporcionalidades')->get();
-        return view('Matérias/Proporcionalidades', compact([ 'posts']));
+        return view('Materias/Proporcionalidades', compact([ 'posts']));
     }
 
     public function Funcao_de_1_grau()
     {
         $posts = Post::where('matematica', '=', 'Função de 1º grau')->get();
-        return view('Matérias/Funcao_de_1_grau', compact([ 'posts']));
+        return view('Materias/Funcao_de_1_grau', compact([ 'posts']));
     }
 
     public function Funcao_de_2_grau()
     {
         $posts = Post::where('matematica', '=', 'Função de 2º grau')->get();
-        return view('Matérias/Funcao_de_2_grau', compact([ 'posts']));
+        return view('Materias/Funcao_de_2_grau', compact([ 'posts']));
     }
 
     public function Crescimento()
     {
         $posts = Post::where('matematica', '=', 'Crescimento')->get();
-        return view('Matérias/Crescimento', compact([ 'posts']));
+        return view('Materias/Crescimento', compact([ 'posts']));
     }
 
     public function Funcao_exponencial()
     {
         $posts = Post::where('matematica', '=', 'Função exponencial')->get();
-        return view('Matérias/Funcao_exponencial', compact([ 'posts']));
+        return view('Materias/Funcao_exponencial', compact([ 'posts']));
     }
 
-    public function inequações()
+    public function inequacoes()
     {
         $posts = Post::where('matematica', '=', 'inequações')->get();
-        return view('Matérias/inequações', compact([ 'posts']));
+        return view('Materias/inequacoes', compact([ 'posts']));
     }
 
     public function Logaritmos()
     {
         $posts = Post::where('matematica', '=', 'Logaritmos')->get();
-        return view('Matérias/Logaritmos', compact([ 'posts']));
+        return view('Materias/Logaritmos', compact([ 'posts']));
     }
 
-    public function Função_logarítmica()
+    public function Função_logaritmica()
     {
         $posts = Post::where('matematica', '=', 'Função logarítmica')->get();
-        return view('Matérias/Função_logarítmica', compact([ 'posts']));
+        return view('Materias/Funcao_logaritmica', compact([ 'posts']));
     }
 
-    public function trigonométricas()
+    public function trigonometricas()
     {
         $posts = Post::where('matematica', '=', 'Razões trigonométricas nos triângulos retângulos')->get();
-        return view('Matérias/trigonométricas', compact([ 'posts']));
+        return view('Materias/trigonometricas', compact([ 'posts']));
     }
 
-    public function Polígonos_regulares()
+    public function Poligonos_regulares()
     {
         $posts = Post::where('matematica', '=', 'Polígonos regulares')->get();
-        return view('Matérias/Polígonos_regulares', compact([ 'posts']));
+        return view('Materias/Poligonos_regulares', compact([ 'posts']));
     }
     
-    public function triângulos_não_retângulos()
+    public function triangulos_nao_retangulos()
     {
         $posts = Post::where('matematica', '=', 'Resolução de triângulos não retângulos')->get();
-        return view('Matérias/triângulos_não_retângulos', compact([ 'posts']));
+        return view('Materias/triangulos_nao_retangulos', compact([ 'posts']));
     }
     
     public function seus_cadastros()

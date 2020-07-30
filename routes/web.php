@@ -35,12 +35,12 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/Funcao_de_2_grau', 'matematica@Funcao_de_2_grau')->name('Funcao_de_2_grau');
     Route::get('/Crescimento', 'matematica@Crescimento')->name('Crescimento');
     Route::get('/Funcao_exponencial', 'matematica@Funcao_exponencial')->name('Funcao_exponencial');
-    Route::get('/inequações', 'matematica@inequações')->name('inequações');
+    Route::get('/inequacoes', 'matematica@inequações')->name('inequacoes');
     Route::get('/Logaritmos', 'matematica@Logaritmos')->name('Logaritmos');
-    Route::get('/Função_logarítmica', 'matematica@Função_logarítmica')->name('Função_logarítmica');
-    Route::get('/trigonométricas', 'matematica@trigonométricas')->name('trigonométricas');
-    Route::get('/Polígonos_regulares', 'matematica@Polígonos_regulares')->name('Polígonos_regulares');
-    Route::get('/triângulos_não_retângulos', 'matematica@triângulos_não_retângulos')->name('triângulos_não_retângulos');
+    Route::get('/Funcao_logaritmica', 'matematica@Funcao_logaritmica')->name('Funcao_logaritmica');
+    Route::get('/trigonometricas', 'matematica@trigonométricas')->name('trigonometricas');
+    Route::get('/Poligonos_regulares', 'matematica@Poligonos_regulares')->name('Poligonos_regulares');
+    Route::get('/triangulos_nao_retangulos', 'matematica@triangulos_nao_retangulos')->name('triangulos_nao_retangulos');
 
     // Seus posts
     Route::get('/seus_cadastros', 'matematica@seus_cadastros')->name('seus_cadastros');

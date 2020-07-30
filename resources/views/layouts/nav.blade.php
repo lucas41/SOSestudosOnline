@@ -72,12 +72,12 @@
                                         <a class="dropdown-item" href="{{ route('Funcao_de_2_grau') }}">Função de 2º grau</a>
                                         <a class="dropdown-item" href="{{ route('Crescimento') }}">Crescimento </a>
                                         <a class="dropdown-item" href="{{ route('Funcao_exponencial') }}">Função exponencial</a>
-                                        <a class="dropdown-item" href="{{ route('inequações') }}">Inequações</a>
+                                        <a class="dropdown-item" href="{{ route('inequacoes') }}">Inequações</a>
                                         <a class="dropdown-item" href="{{ route('Logaritmos') }}">Logaritmos</a>
-                                        <a class="dropdown-item" href="{{ route('Função_logarítmica') }}">Função logarítmica</a>
-                                        <a class="dropdown-item" href="{{ route('trigonométricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>
-                                        <a class="dropdown-item" href="{{ route('Polígonos_regulares') }}">Polígonos regulares</a>
-                                        <a class="dropdown-item" href="{{ route('triângulos_não_retângulos') }}">Resolução de triângulos não<br> retângulos</a>
+                                        <a class="dropdown-item" href="{{ route('Funcao_logaritmica') }}">Função logarítmica</a>
+                                        <a class="dropdown-item" href="{{ route('trigonometricas') }}">Razões trigonométricas nos <br> triângulos retângulos</a>
+                                        <a class="dropdown-item" href="{{ route('Poligonos_regulares') }}">Polígonos regulares</a>
+                                        <a class="dropdown-item" href="{{ route('triangulos_nao_retangulos') }}">Resolução de triângulos não<br> retângulos</a>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('seus_cadastros') }}">Seus cadastros</a>
