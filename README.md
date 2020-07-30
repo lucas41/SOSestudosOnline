@@ -6,7 +6,7 @@ A [S.O.S.: Estudos em Casa](https://sosestudos.com.br/) é uma plataforma criada
 
 ## Funcionamento
 
-O usuário se cadastra colocando o link de suas redes sociais para as pessoas o encontrarem, e depois acrescenta alguns conteúdos que ele conhece bem a ponto de conseguir ensinar os outros. Feito isso, ele também pode acessas algum assunto que tem dúvidas e descobrir quem pode o ajudar.
+O usuário se cadastra colocando o link de suas redes sociais para as pessoas o encontrarem, e depois acrescenta alguns conteúdos que ele conhece bem a ponto de conseguir ensinar os outros. Feito isso, ele também pode acessar algum assunto que tem dúvidas e descobrir quem pode o ajudar.
 
 ## Ferramentas utilizadas
 
