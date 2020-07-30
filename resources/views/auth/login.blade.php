@@ -6,7 +6,7 @@
         <div class="col-sm-12 col-md-6 col-lg-4">
             <div class="card">
                 <div class="card-body">
-                    <h3 class="card-title text-center">Login</h3>
+                    <h3 class="card-title text-center">Entrar</h3>
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -23,7 +23,7 @@
                         </section>
 
                         <section class="form-group">
-                            <label for="password" class="text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="text-md-right">{{ __('Senha') }}</label>
                             <div>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                                 @error('password')

@@ -38,6 +38,52 @@
     </section>
 
     <section>
+        <div class="container" id="equipe">
+            <h1><i class="fas fa-users"></i> Nossa equipe</h1>
+            <div>
+                <div class="row content text-center">
+                    <div class="col-md-4 membro">
+                        <img class="rounded-circle" src="{{ asset('/imgs/equipe/daniel.jpg') }}" alt="Daniel Germinaro">
+                        <p>
+                            <h4>Daniel Germinaro</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Idealizador</h6>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/daniel.germinaro" target="none"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://www.instagram.com/daniel.germinaro/" target="none"><span class="fab fa-instagram"></span></a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 membro">
+                        <img class="rounded-circle" src="{{ asset('/imgs/equipe/isabella.jpg') }}" alt="Isabella Adorno">
+                        <p>
+                            <h4>Isabella Adorno</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Front-end Developer</h6>
+                        </p>
+                        <p>
+                            <a href="https://github.com/bellps" target="none"><span class="fab fa-github"></span></a>
+                            <a href="https://www.linkedin.com/in/isabella-adorno/" target="none"><span class="fab fa-linkedin"></span></a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 membro">
+                        <img class="rounded-circle" src="{{ asset('/imgs/equipe/lucas.jpg') }}" alt="Lucas Delfini">
+                        <p>
+                            <h4>Lucas Delfini</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Back-end Developer</h6>
+                        </p>
+                        <p>
+                            <a href="https://www.facebook.com/lucas.delfini.16" target="none"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://www.linkedin.com/in/lucas-delfini-ribeiro-da-silva-8388357a" target="none"><span class="fab fa-linkedin"></span></a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
         <div class="container" id="contato">
             <h1><i class="fas fa-comments"></i> Contato</h1>
             <div>

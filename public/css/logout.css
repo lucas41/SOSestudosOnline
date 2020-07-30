@@ -10,7 +10,8 @@ body{
 body::-webkit-scrollbar-track
 {
 	background-color: #123D6A;
-	border-radius: 10px;
+    border-radius: 10px;
+   
 }
 
 body::-webkit-scrollbar
@@ -24,6 +25,10 @@ body::-webkit-scrollbar-thumb
 	border-radius: 10px;
 	background-color: #ffffff52;
 	background-image: #0000;
+}
+
+#authActions{
+    flex-direction: row;
 }
 
 .content{
@@ -60,7 +65,7 @@ a:hover{
     min-height: 100vh;
 }
 
-#sobre, #contato{
+#sobre, #contato, #equipe{
     padding-top: 3em;
     min-height: 100vh;
 }
@@ -71,11 +76,44 @@ a:hover{
     margin-top: 4vw;
 }
 
+#equipe span{
+    font-size: 1.5em;
+}
+
+.membro {
+    padding: 1em;
+    border-radius: 0.3em;
+    box-shadow: 0;
+    transition: box-shadow 0.3s ease-in-out;
+}
+  
+.membro:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.membro img{
+    width: 19em;
+}
+
+
 .description{
     font-weight: lighter;
     font-style: italic;
     margin-top: 1em;
     margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 1199px){
+    .membro img{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 991px){
+    #authActions .login{
+        padding-right: 1em;
+    }
+
 }
 
 @media only screen and (max-width: 767px){
@@ -100,6 +138,11 @@ a:hover{
     #apresentacao{
         padding-top: 6em;
     }
+
+    .membro img{
+        width: 15em;
+    }
+
 }
 
 @media only screen and (max-width: 408px){

@@ -30,20 +30,24 @@
                                 <a class="nav-link" href="/#sobre">Sobre nós</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="/#equipe">Equipe</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="/#contato">Contato</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        </ul>  
+                        
                     </div>
+                    <ul class="navbar-nav ml-auto" id="authActions">
+                        <li class="nav-item">
+                            <a class="nav-link login" href="{{ route('login') }}">{{ __('Entrar') }} </a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}"> {{ __('Cadastrar') }}</a>
+                            </li>
+                        @endif
+                    </ul>  
         @else
             <title>{{$view_name}} / SOS</title>
             <link rel="stylesheet" href="{{ asset('css/main.css') }}">

@@ -7,4 +7,5 @@ const reveal = {
 };
 
 ScrollReveal().reveal('#sobre', reveal);
+ScrollReveal().reveal('#equipe', reveal);
 ScrollReveal().reveal('#contato', reveal);
